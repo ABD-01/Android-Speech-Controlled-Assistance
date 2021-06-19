@@ -63,7 +63,7 @@ public class ConfigureActivity extends AppCompatActivity {
         editor.apply();
 
         Toast.makeText(this, "Configuration Updated", Toast.LENGTH_LONG).show();
-//	ref: https://gist.github.com/codinginflow/b4f4c0cb30dbc135129c89fa13c184a1
+//	    ref: https://gist.github.com/codinginflow/b4f4c0cb30dbc135129c89fa13c184a1
     }
 
     public void loadData() {

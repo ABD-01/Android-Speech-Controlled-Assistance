@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return true;
-//     ref: https://www.youtube.com/watch?v=oh4YOj9VkVE
+//    ref: https://www.youtube.com/watch?v=oh4YOj9VkVE
     }
 
     public void configure(MenuItem item) {
