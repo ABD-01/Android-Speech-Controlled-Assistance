@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ConfigureActivity"
+            android:name="com.abd.speechconrolledassistance.ConfigureActivity"
             android:label="Configuration">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.abd.speechconrolledassistance.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

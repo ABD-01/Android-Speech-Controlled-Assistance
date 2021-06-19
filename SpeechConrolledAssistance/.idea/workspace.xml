@@ -26,6 +26,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="8e0a7907" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -52,7 +53,6 @@
   <component name="ProjectId" id="1tzp9GwFyTEAUfps13yC7zTMv3L" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -67,7 +67,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PsdUISettings">
-    <option name="MODULE_TAB" value="Default Config" />
+    <option name="MODULE_TAB" value="Properties" />
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
@@ -138,10 +138,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1624071700465" />
-    <state x="200" y="94" key="#PSD" timestamp="1624018179325">
+    <state x="200" y="94" key="#PSD" timestamp="1624088017752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="94" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1624018179325" />
+    <state x="200" y="94" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1624088017752" />
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1624074132241">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -186,5 +186,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1366.728@0.0.1366.728" timestamp="1624082227535" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1624088009470">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1624088009470" />
+    <state x="275" y="21" key="scopes" timestamp="1624088148397">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="scopes/0.0.1366.728@0.0.1366.728" timestamp="1624088148397" />
   </component>
 </project>

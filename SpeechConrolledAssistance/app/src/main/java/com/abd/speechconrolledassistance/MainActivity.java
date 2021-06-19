@@ -1,4 +1,4 @@
-package com.example.speechconrolledassistance;
+package com.abd.speechconrolledassistance;
 
 import android.Manifest;
 import android.content.Intent;
@@ -20,6 +20,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
+import com.example.speechconrolledassistance.R;
 
 import java.util.ArrayList;
 import java.util.Locale;
