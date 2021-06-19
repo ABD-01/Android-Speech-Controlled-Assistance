@@ -1,11 +1,5 @@
 package com.example.speechconrolledassistance;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -14,18 +8,25 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import java.util.ArrayList;
 import java.util.Locale;
 
-
 public class MainActivity extends AppCompatActivity {
 
-    private static final String LOG_TAG = MainActivity.class.getSimpleName();
+    public static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final Integer RecordAudioRequestCode = 1;
 
     private TextView recoText;
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 //        ref: https://github.com/abhinav0612/SpeechToText/blob/master/app/src/main/java/com/example/texttospeech/MainActivity.java#L37
 
         recoText = findViewById(R.id.recoText);
-        button = findViewById((R.id.button));
+        button = findViewById((R.id.speak));
 
 
         final Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
@@ -62,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(LOG_TAG, "Button clicked!");
                 System.out.println("Button is Clicked");
                 textToSpeech.speak("What is your Command", TextToSpeech.QUEUE_ADD, null);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 startActivityForResult(intent, 10);
             }
         });
@@ -98,4 +104,20 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+//     ref: https://www.youtube.com/watch?v=oh4YOj9VkVE
+    }
+
+    public void configure(MenuItem item) {
+        Log.d(LOG_TAG, "Implement Configure");
+
+    }
+
+    public void showAbout(MenuItem item) {
+        About.show(this);
+    }
 }
