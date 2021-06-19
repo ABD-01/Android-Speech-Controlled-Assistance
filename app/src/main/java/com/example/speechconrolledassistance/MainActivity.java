@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        About.show(this);
 
         final TextToSpeech textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override
@@ -52,11 +53,6 @@ public class MainActivity extends AppCompatActivity {
         recoText = findViewById(R.id.recoText);
         button = findViewById((R.id.speak));
 
-
-        final Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,7 +64,11 @@ public class MainActivity extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+                intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
                 startActivityForResult(intent, 10);
+//                ref: https://github.com/AnasAlmasri/VoiceRecognitionCalculator/blob/master/app/src/main/java/com/anas/voicerecognitioncalculator/MainActivity.java
             }
         });
 
@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                 assert result != null;
                 recoText.setText(result.get(0));
+
             }
         }
     }
@@ -113,8 +114,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void configure(MenuItem item) {
-        Log.d(LOG_TAG, "Implement Configure");
-
+        Log.d(LOG_TAG, "Configuring");
+        Intent intent = new Intent(this, ConfigureActivity.class);
+        startActivity(intent);
     }
 
     public void showAbout(MenuItem item) {
