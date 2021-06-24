@@ -14,6 +14,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -75,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
                 intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
                 startActivityForResult(intent, 10);
-//                ref: https://github.com/AnasAlmasri/VoiceRecognitionCalculator/blob/master/app/src/main/java/com/anas/voicerecognitioncalculator/MainActivity.java
+                // ref: https://github.com/AnasAlmasri/VoiceRecognitionCalculator/blob/master/app/src/main/java/com/anas/voicerecognitioncalculator/MainActivity.java
             }
         });
 
@@ -86,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         Log.d(LOG_TAG, "Activity Result out");
-        System.out.println("Activity Result out");
         if (resultCode == RESULT_OK && data != null) {
             if (requestCode == 10) {
                 ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
@@ -95,6 +95,23 @@ public class MainActivity extends AppCompatActivity {
                 startRequestThread(result.get(0));
             }
         }
+    }
+
+    public void popUpMenu(View view) {
+        PopupMenu popup = new PopupMenu(MainActivity.this, (Button) findViewById(R.id.nomic));
+        //Inflating the Popup using xml file
+        popup.getMenuInflater().inflate(R.menu.nomic_menu, popup.getMenu());
+
+        //registering popup with OnMenuItemClickListener
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            public boolean onMenuItemClick(MenuItem item) {
+                Log.d(LOG_TAG, "Clicked: " + item.getTitle());
+                startRequestThread((String) item.getTitle());
+                return true;
+            }
+        });
+        popup.show();
+        // ref: https://www.javatpoint.com/android-popup-menu-example
     }
 
     private void startRequestThread(String command) {

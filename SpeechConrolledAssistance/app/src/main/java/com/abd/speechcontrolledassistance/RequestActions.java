@@ -47,7 +47,7 @@ public class RequestActions implements Runnable {
     }
 
     private void main(String command) {
-        Log.d(MainActivity.LOG_TAG, "Started Main Function");
+        Log.d(MainActivity.LOG_TAG, "Started main function.");
         String[] commandON = new String[] {"on", "turn on", "switch on", "open", "start"};
         String[] commandOFF = new String[] {"off", "turn off", "switch off", "close", "stop"};
         // ref: https://stackoverflow.com/questions/18885043/better-way-to-detect-if-a-string-contains-multiple-words/18885081
@@ -75,7 +75,7 @@ public class RequestActions implements Runnable {
     }
 
     private void performAction(String command, boolean state) {
-        Log.d(MainActivity.LOG_TAG, "Started performAction Function with state " + Boolean.toString(state));
+        Log.d(MainActivity.LOG_TAG, "Started performAction function.");
         String[] Pins = new String[] {"light", "fan", "door", "projector", "curtains"};
 
         for (int i = 0; i < Pins.length; i++) {
@@ -90,7 +90,7 @@ public class RequestActions implements Runnable {
     }
 
     private void parseResponse(String name, boolean state, int success, String value) {
-        Log.d(MainActivity.LOG_TAG, "Parsing Respone");
+        Log.d(MainActivity.LOG_TAG, "Started parseResponse function.");
         if (success == 0) {
             reply = "Operation failed. " + value;
             toastAndSpeak(reply);
@@ -150,6 +150,6 @@ public class RequestActions implements Runnable {
                 });
             }
         }).start();
+     // ref: https://stackoverflow.com/questions/3875184/cant-create-handler-inside-thread-that-has-not-called-looper-prepare
     }
-
 }
