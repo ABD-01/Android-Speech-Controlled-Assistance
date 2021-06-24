@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/p0s0"
+        android:title="Switch Off the Light"/>
+    <item
+        android:id="@+id/p0s1"
+        android:title="Switch on the Light" />
+    <item
+        android:id="@+id/p1s0"
+        android:title="Switch Off the Fan"/>
+    <item
+        android:id="@+id/p1s1"
+        android:title="Switch on the Fan" />
+    <item
+        android:id="@+id/p2s0"
+        android:title="Close the Door"/>
+    <item
+        android:id="@+id/p2s1"
+        android:title="Open the Door" />
+    <item
+        android:id="@+id/p3s0"
+        android:title="Close the Projector"/>
+    <item
+        android:id="@+id/p3s1"
+        android:title="Open the Projector" />
+    <item
+        android:id="@+id/p4s0"
+        android:title="Close the Curtains"/>
+    <item
+        android:id="@+id/p4s1"
+        android:title="Open the Curtains" />
+</menu>

@@ -20,7 +20,6 @@ public class About{
             }
         });
 
-        System.out.println("Showing About");
         AlertDialog dialog = builder.create();
 
         Log.d(MainActivity.LOG_TAG, "Showing About!");
