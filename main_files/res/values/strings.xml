@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Speech Controlled Assistance</string>
-    <string name="about_text">Speech Controlled Assistance\nUse voice command to turn ON/OFF household appliances.\nFor example: Speak-\"Turn on the fan.\"</string>
+    <string name="about_text">Group : 05\nSmart Classroom using Speech Recognition</string>
 
 </resources>
