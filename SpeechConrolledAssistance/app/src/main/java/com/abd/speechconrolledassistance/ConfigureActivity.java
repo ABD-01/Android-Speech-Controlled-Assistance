@@ -2,7 +2,6 @@ package com.abd.speechconrolledassistance;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,6 +36,7 @@ public class ConfigureActivity extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                /*
                 if (TextUtils.isEmpty(apiKey.getText().toString())) {
                     apiKey.setError("API_KEY field cannot be Empty");
                     return;
@@ -44,7 +44,7 @@ public class ConfigureActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty(deviceId.getText().toString())) {
                     deviceId.setError("Device ID field cannot be Empty");
                     return;
-                }
+                }*/
                 saveData();
             }
         });

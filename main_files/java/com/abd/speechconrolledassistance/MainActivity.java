@@ -1,4 +1,4 @@
-package com.example.speechconrolledassistance;
+package com.abd.speechconrolledassistance;
 
 import android.Manifest;
 import android.content.Intent;
@@ -21,6 +21,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.example.speechconrolledassistance.R;
+
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final Integer RecordAudioRequestCode = 1;
+    public static TextToSpeech textToSpeech;
 
     private TextView recoText;
     private Button button;
@@ -38,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         About.show(this);
 
-        final TextToSpeech textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+        textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int i) {
             }
@@ -85,7 +88,11 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                 assert result != null;
                 recoText.setText(result.get(0));
-
+                Log.d(LOG_TAG, "result is a(n) " + result.getClass().getSimpleName());
+                Log.d(LOG_TAG, "result.get(0) is a(n) " + result.get(0).getClass().getSimpleName());
+                RequestActions requestAction = new RequestActions(result.get(0));
+                new Thread(requestAction).start();
+                textToSpeech.speak(result.get(0), TextToSpeech.QUEUE_ADD, null);
             }
         }
     }

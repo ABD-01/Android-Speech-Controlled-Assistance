@@ -64,10 +64,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PsdUISettings">
-    <option name="MODULE_TAB" value="Properties" />
+    <option name="MODULE_TAB" value="Default Config" />
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
@@ -134,18 +135,22 @@
     </configuration>
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="21" key="#Inspections" timestamp="1624071700465">
+    <state x="275" y="21" key="#Inspections" timestamp="1624106485994">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="21" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1624071700465" />
-    <state x="200" y="94" key="#PSD" timestamp="1624088017752">
+    <state x="275" y="21" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1624106485994" />
+    <state x="200" y="94" key="#PSD" timestamp="1624099008579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="94" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1624088017752" />
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1624074132241">
+    <state x="200" y="94" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1624099008579" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1624112086863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1624074132241" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1624112086863" />
+    <state x="401" y="200" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1624111406578">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="401" y="200" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1624111406578" />
     <state x="263" y="117" key="AndroidCreateResourceDirectoryDialog" timestamp="1624066925779">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -158,22 +163,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="67" key="AndroidThemeDialog/0.0.1366.728@0.0.1366.728" timestamp="1624021412869" />
-    <state width="1322" height="26" key="GridCell.Tab.0.bottom" timestamp="1624086089933">
+    <state width="1322" height="168" key="GridCell.Tab.0.bottom" timestamp="1624107501059">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="26" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624086089933" />
-    <state width="1322" height="26" key="GridCell.Tab.0.center" timestamp="1624086089932">
+    <state width="1322" height="168" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624107501059" />
+    <state width="1322" height="168" key="GridCell.Tab.0.center" timestamp="1624107501058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="26" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1624086089932" />
-    <state width="1322" height="26" key="GridCell.Tab.0.left" timestamp="1624086089931">
+    <state width="1322" height="168" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1624107501058" />
+    <state width="1322" height="168" key="GridCell.Tab.0.left" timestamp="1624107501058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="26" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1624086089931" />
-    <state width="1322" height="26" key="GridCell.Tab.0.right" timestamp="1624086089932">
+    <state width="1322" height="168" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1624107501058" />
+    <state width="1322" height="168" key="GridCell.Tab.0.right" timestamp="1624107501058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="26" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1624086089932" />
+    <state width="1322" height="168" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1624107501058" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1624018955929">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

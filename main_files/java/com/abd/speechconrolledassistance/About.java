@@ -1,4 +1,4 @@
-package com.example.speechconrolledassistance;
+package com.abd.speechconrolledassistance;
 
 import android.app.AlertDialog;
 import android.content.Context;
