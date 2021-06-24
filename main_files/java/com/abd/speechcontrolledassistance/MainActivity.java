@@ -1,7 +1,8 @@
-package com.abd.speechconrolledassistance;
+package com.abd.speechcontrolledassistance;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -21,10 +22,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.speechconrolledassistance.R;
-
 import java.util.ArrayList;
 import java.util.Locale;
+
+import static com.abd.speechcontrolledassistance.ConfigureActivity.APIKEY;
+import static com.abd.speechcontrolledassistance.ConfigureActivity.DEVICEID;
+import static com.abd.speechcontrolledassistance.ConfigureActivity.SHARED_PREFS;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d(LOG_TAG, "Created MainActivity");
         About.show(this);
 
         textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
@@ -88,13 +92,17 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                 assert result != null;
                 recoText.setText(result.get(0));
-                Log.d(LOG_TAG, "result is a(n) " + result.getClass().getSimpleName());
-                Log.d(LOG_TAG, "result.get(0) is a(n) " + result.get(0).getClass().getSimpleName());
-                RequestActions requestAction = new RequestActions(result.get(0));
-                new Thread(requestAction).start();
-                textToSpeech.speak(result.get(0), TextToSpeech.QUEUE_ADD, null);
+                startRequestThread(result.get(0));
             }
         }
+    }
+
+    private void startRequestThread(String command) {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+        String api = sharedPreferences.getString(APIKEY, "");
+        String id = sharedPreferences.getString(DEVICEID, "");
+        RequestActions requestAction = new RequestActions(this, api, id, command);
+        new Thread(requestAction).start();
     }
 
     private void checkPermission() {

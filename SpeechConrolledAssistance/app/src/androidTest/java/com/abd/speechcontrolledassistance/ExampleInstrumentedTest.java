@@ -1,4 +1,4 @@
-package com.example.speechconrolledassistance;
+package com.abd.speechcontrolledassistance;
 
 import android.content.Context;
 

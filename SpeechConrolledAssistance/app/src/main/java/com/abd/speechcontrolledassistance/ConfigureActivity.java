@@ -1,4 +1,4 @@
-package com.abd.speechconrolledassistance;
+package com.abd.speechcontrolledassistance;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -8,8 +8,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.speechconrolledassistance.R;
 
 public class ConfigureActivity extends AppCompatActivity {
 

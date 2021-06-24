@@ -11,7 +11,7 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Main" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
@@ -60,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.recentlyUsedThemes" value="android:Theme.Material" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -143,10 +143,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="200" y="94" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1624099008579" />
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1624112086863">
+    <state x="413" y="117" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1624507792021">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1624112086863" />
+    <state x="413" y="117" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1624507792021" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1624514729011">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1624514729011" />
+    <state x="387" y="46" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1624514647439">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="387" y="46" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.1366.728@0.0.1366.728" timestamp="1624514647439" />
     <state x="401" y="200" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1624111406578">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -163,22 +171,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="67" key="AndroidThemeDialog/0.0.1366.728@0.0.1366.728" timestamp="1624021412869" />
-    <state width="1322" height="168" key="GridCell.Tab.0.bottom" timestamp="1624107501059">
+    <state x="463" y="117" width="591" height="493" key="FileChooserDialogImpl" timestamp="1624519534606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="168" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624107501059" />
-    <state width="1322" height="168" key="GridCell.Tab.0.center" timestamp="1624107501058">
+    <state x="463" y="117" width="591" height="493" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1624519534606" />
+    <state width="1322" height="8" key="GridCell.Tab.0.bottom" timestamp="1624527269284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="168" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1624107501058" />
-    <state width="1322" height="168" key="GridCell.Tab.0.left" timestamp="1624107501058">
+    <state width="1322" height="8" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624527269284" />
+    <state width="1322" height="8" key="GridCell.Tab.0.center" timestamp="1624527269284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="168" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1624107501058" />
-    <state width="1322" height="168" key="GridCell.Tab.0.right" timestamp="1624107501058">
+    <state width="1322" height="8" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1624527269284" />
+    <state width="1322" height="8" key="GridCell.Tab.0.left" timestamp="1624527269284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="168" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1624107501058" />
+    <state width="1322" height="8" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1624527269284" />
+    <state width="1322" height="8" key="GridCell.Tab.0.right" timestamp="1624527269284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="8" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1624527269284" />
+    <state x="415" y="239" key="ScreenshotRecorder.Options.Dimensions" timestamp="1624519516048">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="415" y="239" key="ScreenshotRecorder.Options.Dimensions/0.0.1366.728@0.0.1366.728" timestamp="1624519516048" />
+    <state x="120" y="0" key="ScreenshotViewer.Dimensions" timestamp="1624521051949">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="120" y="0" key="ScreenshotViewer.Dimensions/0.0.1366.728@0.0.1366.728" timestamp="1624521051949" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1624018955929">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -191,6 +211,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1366.728@0.0.1366.728" timestamp="1624082227535" />
+    <state x="445" y="206" key="edit.logcat.filter.dialog.dimensions" timestamp="1624520317326">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="445" y="206" key="edit.logcat.filter.dialog.dimensions/0.0.1366.728@0.0.1366.728" timestamp="1624520317326" />
     <state x="339" y="157" key="run.anything.popup" timestamp="1624088009470">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -199,5 +223,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="scopes/0.0.1366.728@0.0.1366.728" timestamp="1624088148397" />
+    <state x="463" y="144" key="strings.multiline.dialog" timestamp="1624526129396">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="144" key="strings.multiline.dialog/0.0.1366.728@0.0.1366.728" timestamp="1624526129396" />
   </component>
 </project>
