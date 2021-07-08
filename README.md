@@ -1,7 +1,7 @@
 # Android-Voice-Controlled-Assistance
 
 <p align="center">
-<img src="media/component.jpeg" width=50%>
+<img src="media/component.jpeg" width=25%>
 </p>
 
 This is an Android Applications for Smart Classroom uses Speech Recognition to perform actions such as turning on/off ligths, etc.
@@ -41,4 +41,7 @@ Refer [here](https://docs.boltiot.com/docs/device-info) to get Device Id.
 
 ## Demo
 
-[![Demo Video](media/jarvis.jpg)](media/recording.mp4)
+https://user-images.githubusercontent.com/63636498/124931723-20468580-e020-11eb-8ce6-08d5f8451609.mp4&height=512
+
+
+
