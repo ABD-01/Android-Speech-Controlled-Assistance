@@ -44,4 +44,7 @@ Refer [here](https://docs.boltiot.com/docs/device-info) to get Device Id.
 https://user-images.githubusercontent.com/63636498/124931723-20468580-e020-11eb-8ce6-08d5f8451609.mp4&height=512
 
 
+## Contributers
 
+* Hardware: [Hadi Ali](https://github.com/hadiali2100)
+* Android App: [Muhammed Abdullah](https://github.com/ABD-01)
